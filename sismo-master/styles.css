@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: #0466C8;
+}
+.container{
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+h1{
+  padding:10px;
+  width: 220px;
+}
+h1 img{
+  width: 100%;
+}
+.top img{
+  width: 100%;
+}
+.frase-wrapper{
+  display: flex;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 60px;
+  
+}
+.frase{
+  color: #FFFFFF;
+  font-size: 28px;
+
+}
+.monitoramento{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.monitoramento-1{
+  flex: 1;
+  color: #001233;
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  color: #001845;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  min-width: 260px;
+
+  border-bottom:1px solid #BBBDBF50;
+  transition: 0.2s;
+}
+.item:hover{
+  background-color: #BBBDBF50;
+}
+
+.monitoramento-2{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.monitoramento-2 img{
+  width: 70%;
+  min-width: 200px;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #001233;
+}
+.proto{
+  margin-top: 50px;
+  
+}
+.proto h2{
+  margin-bottom: 10px;
+}
+.proto img{
+  width: 100%;
+}
+
+.piramide{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.piramide p{
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #7D8597;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.piramide img{
+  margin-top: 30px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.time{
+  margin-top: 60px;
+}
+.team{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.team-item{
+  margin: 10px;
+  width: 180px;
+}
+.team-item img{
+  width: 100%;
+}
+.team-name{
+  text-align: center;
+  font-size: 18px;
+}
+.team-description p{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+footer{
+  position: relative;
+}
+footer img{
+  width: 100%;
+}
+footer p{
+  margin-top: -5px;
+  padding: 40px;
+  background-color: #0466C8;
+  font-size: 18px;
+  color: #fff;
+
+  width: 100%;
+  text-align: center;
+}
