@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  padding:0 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.container2 {
+  width: 100%;
+  padding:0 25;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+#top {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  margin-top: 50px;
+}
+
+#profile-photo-bg {
+  position: fixed;
+  
+  z-index: -1;
+
+  animation: bgfoto 10s linear infinite alternate;
+
+  max-width: 50%;
+
+}
+
+#photo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#profile-photo {
+  width: 300px;
+  margin-left: auto;
+}
+
+#info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+#info h1 {
+  font-size: 32px;
+}
+
+#contato {
+  display: flex;
+}
+
+#contato ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#contato ul li a {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+  
+  text-decoration: none;
+  color: #000;
+  transition: .2s;
+}
+#contato ul li a:hover {
+  color: #505050;
+}
+
+#contato ul li p {
+  margin-left: 10px;
+}
+
+
+#orcamento {
+  background-color: #1F3056;
+  padding: 50px 75px;
+  border-radius:35px;
+  margin:100px 0;
+  color:#fff;
+}
+#orcamento h2 {
+  font-size:32px;
+  text-align: center;
+  margin-top:-10px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+}
+
+#content ul {
+  list-style: none;
+  margin-top:60px;
+}
+#content ul li{
+  font-size:23px;
+  font-weight: bold;
+  margin-top: 28px;
+  line-height: 18px;
+}
+
+#itens {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F0B119; /* Safari */  
+  text-decoration-color: #F0B119;
+}
+
+#botao-whatsapp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#botao-whatsapp a {
+  text-decoration: none;
+  margin-left: auto;
+}
+
+#botao-whatsapp button {
+  background-color: #128C7E;
+  cursor: pointer;
+  
+  border: solid #fff 6px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  transition: .2s;
+
+  margin-top: 50px;
+}
+#botao-whatsapp button:hover {
+  background-color: #17B4A2;
+}
+
+#botao-whatsapp button span {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+#botao-whatsapp  #numero {
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-size: 23px;
+
+}
+
+
+#sobre-mim {
+  background-color: #1958F0;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30px 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+#sobre-mim p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#sobre-mim strong {
+  color: #F0B119;
+  font-size: 21px;
+}
+
+#sobre-mim::after {
+  content: ' ';
+  position: absolute;
+  background-color: #071A46;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+  animation: sobremim 3s ease-in-out infinite;
+}
+
+
+@keyframes sobremim {
+  0% {
+    top: -10px;
+    left: -10px;
+  }
+  25% {
+    top: 10px;
+    left: -10px;
+  }
+  50% {
+    top: 10px;
+    left: 10px;
+  }
+  75% {
+    top: -10px;
+    left: 10px;
+  }
+  100% {
+    top: -10px;
+    left: -10px;
+  }
+}
+@keyframes bgfoto {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+  25% {
+    top: -10px;
+    right: 0px;
+  }
+  50% {
+    top: 0px;
+    right: -10px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+@keyframes footeranimation {
+  0% {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  50% {
+    margin-top: 95px;
+  margin-bottom: 105px;
+  }
+  100% {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  animation: footeranimation 4s linear infinite;
+}
+
+footer img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 853px) {
+  #top{
+    flex-direction: column-reverse;
+  }
+  #profile-photo {
+    margin: 0 auto;
+  }
+
+  #orcamento{
+    padding: 50px 25px;
+
+  }
+  #content {
+    flex-direction: column-reverse;
+  }
+  #botao-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #botao-whatsapp  a{
+    margin:0;
+  }
+  #botao-whatsapp #numero{
+    margin:0;
+    margin-top:15px;
+  }
+}
+
+
+#trabalhos {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 80px;
+   color: #101010;
+}
+
+#items-wrapper {
+  width: 80vw;
+}
+
+#items { 
+  display: flex;
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.item {
+  flex: none;
+
+  display: flex;
+  width: 70%;
+  max-width: 300px;
+  scroll-snap-align: center;
+  margin: 20px 5px;
+  background-color: #303030;
+}
+.item img {
+  width: 100%;
+  border: 9px solid #303030;
+  outline: 9px solid #303030;
+  outline-offset: -10px;
+  object-fit: cover;
+  transition: all .2s ease-in-out; 
+
+}
+
+
+.item img:hover {
+  border: 9px solid #404040;
+  outline: 9px solid #404040;
+  transform: scale(1.05);
+
+}
