@@ -25,7 +25,7 @@ export function Header() {
           text="GITHUB"
         />
         <HeaderLink
-          link="https://www.linkedin.com/in/luis-felipe-galleguillos-3947b113a/"
+          link="https://www.linkedin.com/in/luis-felipe-galleguillos/"
           text="LINKEDIN"
         />
         <HeaderLink

@@ -5,7 +5,7 @@ export function AboutMe() {
   return (
     <section className="flex justify-between mt-16 max-md:flex-wrap-reverse gap-6 max-md:items-center max-md:justify-center">
       <div>
-        <h1 className="text-2xl font-black">
+        <h1 className="text-3xl md:text-5xl font-black">
           Luis Felipe Galleguillos
         </h1>
         <p className="text-lg mt-3 flex-1">
